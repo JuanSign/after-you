@@ -1,0 +1,46 @@
+{
+  "name": "after-you",
+  "version": "1.0.0",
+  "description": "A polite scheduler that prevents main-thread blocking",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts --clean",
+    "dev": "tsup src/index.ts --format cjs,esm --dts --watch",
+    "test": "vitest",
+    "format": "prettier --write ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JuanSign/after-you.git"
+  },
+  "keywords": [
+    "scheduler",
+    "yield",
+    "non-blocking",
+    "performance"
+  ],
+  "author": "JuanSign",
+  "license": "AGPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/JuanSign/after-you/issues"
+  },
+  "homepage": "https://github.com/JuanSign/after-you#readme",
+  "devDependencies": {
+    "prettier": "^3.7.4",
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.17"
+  }
+}
