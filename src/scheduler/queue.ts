@@ -24,15 +24,21 @@ export class LinkedQueue {
     const node = this.head;
     this.head = this.head.next;
 
-    if (!this.head) this.tail = null;
+    if (!this.head) {
+      this.tail = null;
+    }
 
     this.length--;
+
+    node.next = null;
+
     return node;
   }
 
   isEmpty(): boolean {
     return this.length === 0;
   }
+
   peek(): TaskNode | null {
     return this.head;
   }
