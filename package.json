@@ -38,6 +38,9 @@
   },
   "homepage": "https://github.com/JuanSign/after-you#readme",
   "devDependencies": {
+    "@vitest/coverage-v8": "^4.0.17",
+    "@vitest/ui": "^4.0.17",
+    "jsdom": "^27.4.0",
     "prettier": "^3.7.4",
     "tsup": "^8.5.1",
     "typescript": "^5.9.3",
