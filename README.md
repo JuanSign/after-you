@@ -2,6 +2,12 @@
 
 ![npm](https://img.shields.io/npm/v/after-you) ![npm bundle size](https://img.shields.io/bundlephobia/minzip/after-you) ![license](https://img.shields.io/npm/l/after-you)
 
+> **`DEPRECATED.`**
+
+> i decided that this package serve no real users.
+
+> goodbye. -JuanSign
+
 Your browser is single-threaded. When you run a heavy loop, the UI freezes, the user can't click anything, and they eventually close the tab in rage.
 
 **`after-you`** fixes this by making your code polite. It pauses your heavy logic, lets the browser paint the screen or handle a click, and then resumes exactly where it left off.
